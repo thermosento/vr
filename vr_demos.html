@@ -27,10 +27,14 @@
 			function onVrViewLoad() {
 			  // Selector '#vrview' finds element with id 'vrview'.
 			  var vrView = new VRView.Player('#vrview', {
-			    image: 'https://lh4.googleusercontent.com/R-weKPHV1P62_78UF2a8ww-sE7q0CQgwRH5Bg3pJxjS7ve1I2M-RxMh6tLz2NCYzhqcoAYs=w773',
+			    image: 'https://preview.ibb.co/fUyzwV/forest.jpg',
+				width: '100%',
+				height: '300px'
 			  });
-			  var vrView2 = new VRView.Player('#vrview2', {
-			    image: 'https://lh3.googleusercontent.com/HiX7XH4abRpnlKDNMgyb_sFsuvzGGADEJ1ztryU2HXuzLQ2Yz286sygSR_8kZYMQ0wKebxZs=w773',
+			  var vrView = new VRView.Player('#vrview2', {
+			    image: 'https://preview.ibb.co/fs0OOA/sky.jpg',
+				width: '100%',
+				height: '300px'
 			  });
 			}
 
@@ -60,10 +64,10 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">VR Demos</a>
+                        <a href="/vr_demos.html">VR Demos</a>
                     </li>
                     <li>
                         <a href="#">Project</a>
@@ -97,8 +101,8 @@
 	
 		<!-- VR -->
 		<div class="container">
-			<div id ='vrview'></div><br>
-			<div id ='vrview2'></div>
+				<div id ='vrview'></div><br>
+				<div id ='vrview2'></div>
 		</div>
 	
 
