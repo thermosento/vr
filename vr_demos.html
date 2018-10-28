@@ -21,6 +21,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 		<script>
@@ -39,9 +40,29 @@
 =======
 			
 >>>>>>> f3d71dfa07192fa943e0f8900f3d4cbad45b47db
+=======
+			
+>>>>>>> parent of 7dd011e... vr demo working
 				
 >>>>>>> c610c923e0b575b4a41cc6e25040c89f64130d91
 </head>
+
+			<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js">
+				window.addEventListener('load', onVrViewLoad);
+
+				function onVrViewLoad() {
+				  // Selector '#vrview' finds element with id 'vrview'.
+				  var vrView = new VRView.Player('#vrview', {
+				    image: '/images/vr1.JPG',
+				    is_stereo: true
+				  });
+				}
+	
+				var vrView = new VRView.Player('#vrview', {
+				  image: '/images/vr1.JPG',
+				  is_stereo: true
+				});
+			</script>
 
 <body>
 
@@ -95,21 +116,18 @@
 	</div>
 
 	
-		<!-- VR -->
-		<div class="container">
-			<div id ='vrview'></div>
-		</div>
-	
     <!-- Heading -->
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="text-center">Virtual Reality in Outer Space</h1>
 								<p class="lead text-center">Many astronauts in outer space are suffering from loneliness. In order to help alleviate the loneliness of not being able to see other people for months at a time, we have proposed an idea, the idea of putting virtual reality in outer space. This will allow the astronauts in space, to experience places on Earth.</p>
-								
+								<div id='vrview'>
+								</div>
             </div>
         </div>
     </div>
+
 
 		
 >>>>>>> c610c923e0b575b4a41cc6e25040c89f64130d91
