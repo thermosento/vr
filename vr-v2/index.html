@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="Font-Awesome-4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+    
+    <title>Catalyst HTML CSS Template</title>
+<!--
+Catalyst Template
+http://www.templatemo.com/tm-499-catalyst
+-->
+	
+	<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+	<script>
+		window.addEventListener('load', onVrViewLoad);
+
+		function onVrViewLoad() {
+		  // Selector '#vrview' finds element with id 'vrview'.
+		  var vrView = new VRView.Player('#vrview', {
+		    image: 'https://preview.ibb.co/fUyzwV/forest.jpg',
+			width: '100%',
+			height: '300px'
+		  });
+		  var vrView = new VRView.Player('#vrview2', {
+		    image: 'https://preview.ibb.co/fs0OOA/sky.jpg',
+			width: '100%',
+			height: '300px'
+		  });
+		  var vrView = new VRView.Player('#vrview3', {
+		    image: 'https://preview.ibb.co/iOY6BV/Sierra-HDR-Panorama-DFX8048-2280x819-Q40-wm-mini.jpg',
+			width: '100%',
+			height: '300px'
+		  });
+		}
+		
+		function scrollDown() {
+			var el = document.getElementById('services');
+			el.scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+		function scrollDown2() {
+			var el = document.getElementById('contact');
+			el.scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+
+	</script>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item tm-black-translucent-bg tm-logo-box">
+              <i class="fa fa-snowflake-o fa-4x tm-logo"></i>
+              <h1 class="text-uppercase">Experiencing home in space.</h1>
+               
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background tm-white-translucent-bg">
+               <h2 class="main-title text-center dark-blue-text">.01 Welcome</h2>
+               <p>Our goal is to be able to let the astronauts in space experience Earth through the familiar smells and fragrances of their origins. Below are links to simulations to let you experience what it smells like.</p>  
+			        <a href="#test" onclick="scrollDown(); return false;">Click here to go to our demos!</a><br>
+					<a href="#test" onclick="scrollDown2(); return false;">Click here to go to our contact information!</a>
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding tm-equal-col-container" id="services">
+        <div class="col-lg-6 col-md-6 col-sm-12 content-item tm-black-translucent-bg tm-services-section-padding">
+          <h2 class="main-title text-center dark-blue-text">.02 VR Demos</h2>
+		  <p>Here we have arranged an assortment of simulations for scenes paired with smells that will pique your nostalgia, achieved by crowd-sourcing to get the smells that make people feel the most comfortable.</p>
+		  <h2 class="main-title text-center dark-blue-text">.02a Forestry</h2>
+           <div id='vrview'></div>
+		   <h2 class="main-title text-center dark-blue-text">.02b Sky</h2>
+		   <div id='vrview2'></div>
+       </div>
+       
+		   <div class="col-lg-6 col-md-6 content-item content-item-1 background tm-white-translucent-bg">
+           <h2 class="main-title text-center dark-blue-text">.02c Ocean</h2>
+           <div id='vrview3'></div>
+		</div>
+          
+              
+      </section>
+
+      <section class="col-md-12 content padding tm-float-section tm-section-3">
+
+      <div class="col-lg-6 col-md-6 content-item tm-black-translucent-bg"></div>
+      <div class="col-lg-6 col-md-6 content-item tm-white-translucent-bg"></div>
+      
+      <div class="tm-float-section-header">
+        <h2 class="text-center tm-white-text tm-section-3-header">.03 Morbi vehicula suscipit</h2>  
+      </div>
+
+      <div class="tm-float-section-body tm-white-bg">
+        <div class="col-lg-12">
+          <div class="col-md-4 col-lg-4">
+            <i class="fa fa-commenting-o fa-4x tm-fa-icon"></i>
+            <p>We are a group of students at Weston Middle School who want to make a difference.</p>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <i class="fa fa-code fa-4x tm-fa-icon"></i>
+            <p>Curabitur ornare pulvinar sapien, accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <i class="fa fa-inbox fa-4x tm-fa-icon"></i>
+            <p>Curabitur ornare pulvinar sapien, accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+          </div>
+        </div>
+      </div>
+        
+      </section>
+
+   <section class="col-md-12 content" id="contact">
+       <div class="col-lg-6 col-md-6 content-item tm-content-box tm-black-translucent-bg">
+           <h2 class="contact-title">.04 Inquiries</h2>
+           <p>If there are any inquires you would like to submit, do so here.</p>
+           <p>
+             Tel: +1(617)610-6603<br>
+             Address: 456 Wellesley St, Weston, MA 02493<br>
+             Email: 23yango@my.weston.org
+           </p>
+       </div>
+       <div class="col-lg-6 col-md-6 content-item tm-content-box tm-white-translucent-bg">
+           
+           <form action="#" method="post" name="contact-form" class="contact-form">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group margin-b-0">
+                    <button type="submit" id="form-submit" class="btn pull-right btn-contact tm-btn-primary">Submit</button>
+                </div>    
+            </div>
+        </form>
+        <!--</div> -->
+        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
+    </div>
+
+</section>
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+		Copyright &copy; <span class="tm-current-year">2017</span> Company 
+        
+        | Design: <a href="http://www.google.com/+templatemo" target="_parent">templatemo</a>
+    </div>
+</div>
+
+<script>
+
+// Write current year in copyright text.
+  document.getElementsByClassName("tm-current-year").value = new Date().getFullYear();
+
+</script>
+</body>
+</html>
