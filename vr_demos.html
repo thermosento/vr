@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -21,62 +21,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-		<script>
-			window.addEventListener('load', onVrViewLoad);
-
-			function onVrViewLoad() {
-			  // Selector '#vrview' finds element with id 'vrview'.
-			  var vrView = new VRView.Player('#vrview', {
-			    image: 'https://preview.ibb.co/fUyzwV/forest.jpg',
-				width: '100%',
-				height: '500px'
-			  });
-			  var vrView = new VRView.Player('#vrview2', {
-			    image: 'https://preview.ibb.co/fs0OOA/sky.jpg',
-				width: '100%',
-				height: '500px'
-			  });
-			}
-
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script> 
+		$(function(){
+		  $("#header").load("head.html"); 
+		});
 		</script>
-
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                	<span class="glyphicon glyphicon-fire"></span> 
-                	Quaker Oates
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="vr_demos.html">VR Demos</a>
-                    </li>
-                    <li>
-                        <a href="about_us.html">About us</a>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
-		<!--VR 1 -->
+    <div id='header'></div>
 
 	<!-- Feature -->
 	<div class="jumbotron feature">
@@ -98,95 +54,8 @@
 	
 		<!-- VR -->
 		<div class="container">
-			<a target="_blank" href="vr_1.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 1">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_1.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_2.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 2">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_2.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_3.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 3">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_3.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_4.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 4">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_4.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_5.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 5">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_5.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_6.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 6">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_6.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_7.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 7">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_7.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_8.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 8">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_8.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_9.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 9">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_9.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
-			<br>
-			<a target="_blank" href="vr_10.html">
-  				<img src="INSERT THUMBNAIL HERE" alt="VR 10">
-			</a>
-			<br>
-			<br>
-			<a target="_blank" href="vr_10.html">INSERT NAME OF IMAGE HERE</a>
-			<br>
-			<br>
+				<div id ='vrview'></div><br>
+				<div id ='vrview2'></div>
 		</div>
 	
 
@@ -215,16 +84,25 @@
 					<div class="col-sm-4 footer-info-item">
 						<h3>Information</h3>
 						<ul class="list-unstyled">
-							<li><a href="about_us.html">About Us</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Sitemap</a></li>
 						</ul>
 					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3>My Account</h3>
+						<ul class="list-unstyled">
+
+							<li><a href="#">Help</a></li>
+						</ul>	
+				</div><!-- /.row -->
 			</div><!-- /.container -->
         </div>
         
         <!-- Copyright etc -->
         <div class="small-print">
         	<div class="container">
-        		<p>Copyright &copy; Quaker Oates Robotics Team 2018 </p>
+        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        		<p>Copyright &copy; Example.com 2015 </p>
         	</div>
         </div>
         
