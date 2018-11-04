@@ -1,4 +1,4 @@
-﻿body {
+body {
 	padding-top: 50px;    /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
 	color: #959595;
 	}
@@ -13,7 +13,7 @@ h6 {
 	}
 	
 .feature {
-	background: url('https://i.imgur.com/VLS9MBA.png');
+	background: url('../images/light_bulb.jpg');
 	background-position: top right;
 	background-size: cover;
 	background-color: #dd845a;
@@ -146,12 +146,12 @@ Override Bootstrap Classes
 
 /* Links */
 a {
-  color: black;
+  color: orange;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: gray;
+  color: darkorange;
   text-decoration: underline;
 }
 
@@ -226,14 +226,4 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
   background-color: sandybrown;
   border-color: sandybrown;
-}
-
-img {
-    border: 1px solid #ddd; /* Gray border */
-    border-radius: 4px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    width: 150px; /* Set a small width */
-}
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }

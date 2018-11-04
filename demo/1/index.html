@@ -9,10 +9,10 @@
     <title>VR In Space</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="../../css/custom.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,25 +22,25 @@
     <![endif]-->
 		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 	    <!-- jQuery -->
-	    <script src="../../js/jquery-1.11.3.min.js"></script>
+	    <script src="/js/jquery-1.11.3.min.js"></script>
 	    <!-- Bootstrap Core JavaScript -->
-	    <script src="../../js/bootstrap.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
 		<!-- IE10 viewport bug workaround -->
-		<script src="../../js/ie10-viewport-bug-workaround.js"></script>
+		<script src="/js/ie10-viewport-bug-workaround.js"></script>
 		<script>
 			window.addEventListener('load', onVrViewLoad);
 
 			function onVrViewLoad() {
 			  // Selector '#vrview' finds element with id 'vrview'.
 			  var vrView = new VRView.Player('#vrview', {
-			    image: 'https://i.imgur.com/HkWcHfk.jpg',
+			    image: 'https://preview.ibb.co/fUyzwV/forest.jpg',
 				width: '100%',
 				height: '500px'
 			  });
 			}
 			
 			$(function(){
-			  $("#header").load("../head.html"); 
+			  $("#header").load("/head.html"); 
 			});
 		</script>
 
@@ -100,19 +100,28 @@
 					<div class="col-sm-4 footer-info-item">
 						<h3>Information</h3>
 						<ul class="list-unstyled">
-							<li><a href="../../about_us.html">About Us</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Sitemap</a></li>
 						</ul>
 					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3>My Account</h3>
+						<ul class="list-unstyled">
+
+							<li><a href="#">Help</a></li>
+						</ul>	
+				</div><!-- /.row -->
 			</div><!-- /.container -->
         </div>
         
         <!-- Copyright etc -->
         <div class="small-print">
         	<div class="container">
-        		<p>Not Copyrighted &copy; Quaker Oates Robotics Team 2018 </p>
+        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        		<p>Copyright &copy; Example.com 2015 </p>
         	</div>
         </div>
-        </div>
+        
 	</footer>
 
 	

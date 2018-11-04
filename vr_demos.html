@@ -20,15 +20,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="js/jquery-1.11.3.min.js"></script>
-	    <!-- Bootstrap Core JavaScript -->
-	    <script src="js/bootstrap.min.js"></script>
-		<!-- IE10 viewport bug workaround -->
-		<script src="js/ie10-viewport-bug-workaround.js"></script>
-		<script>
+		<script> 
 		$(function(){
-		$("#header").load("../realvr/head.html"); 
+		  $("#header").load("head.html"); 
 		});
 		</script>
 </head>
@@ -56,30 +52,13 @@
         </div>
     </div>
 	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<a target="_blank" href="demo/1/index.html">
-  					<img src="https://i.imgur.com/PS08UIw.jpg?1" alt="Demo 1">
-				</a>
-				<br>
-				<a target="_blank" href="demo/1/index.html">Demo 1</a>
-				<br><br>
-				<a target="_blank" href="demo/2/index.html">
-  					<img src="https://i.imgur.com/KD2BwHJ.jpg?1" alt="Demo 2">
-				</a>
-				<br>
-				<a target="_blank" href="demo/2/index.html">Demo 2</a>
-				<br><br>
-				<a target="_blank" href="demo/3/index.html">
-  					<img src="https://i.imgur.com/Ojx23v7.jpg?1" alt="Demo 3">
-				</a>
-				<br>
-				<a target="_blank" href="demo/3/index.html">Demo 3</a>
-				<br><br>
-			</div>
+		<!-- VR -->
+		<div class="container">
+				<div id ='vrview'></div><br>
+				<div id ='vrview2'></div>
 		</div>
-	</div>
+	
+
 	<!-- Footer -->
 	<footer>
 	
@@ -105,19 +84,28 @@
 					<div class="col-sm-4 footer-info-item">
 						<h3>Information</h3>
 						<ul class="list-unstyled">
-							<li><a href="about_us.html">About Us</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Sitemap</a></li>
 						</ul>
 					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3>My Account</h3>
+						<ul class="list-unstyled">
+
+							<li><a href="#">Help</a></li>
+						</ul>	
+				</div><!-- /.row -->
 			</div><!-- /.container -->
         </div>
         
         <!-- Copyright etc -->
         <div class="small-print">
         	<div class="container">
-        		<p>Not Copyrighted &copy; Quaker Oates Robotics Team 2018 </p>
+        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        		<p>Copyright &copy; Example.com 2015 </p>
         	</div>
         </div>
-        </div>
+        
 	</footer>
 
 	
