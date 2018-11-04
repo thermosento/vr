@@ -146,13 +146,15 @@ Override Bootstrap Classes
 
 /* Links */
 a {
-  color: black;
+  color: slategrey;
   text-decoration: none;
+  font-size:large;
 }
 a:hover,
 a:focus {
-  color: gray;
+  color: black;
   text-decoration: underline;
+  font-size:large;
 }
 
 /* Navbar */
