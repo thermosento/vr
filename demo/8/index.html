@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="We are the Quaker Oates Robotics Team, and our project is to help astronauts remember home and avoid stress with VR Images, which are posted here.">
-	<meta name="keywords" content="VR,Space,VR Images,Astronauts, Quaker Oates, Robotics">
+	<meta name="description" content="This is a VR Image of a forest, created by the Quaker Oates Robotics Team, whose project is to help astronauts remember home with VR Images.">
+	<meta name="keywords" content="Quaker Oates, Robotics, VR Image, Astronaut, Forest">
 
 	<title>VR In Space</title>
 	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
@@ -24,17 +24,30 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="../../js/jquery-1.11.3.min.js"></script>
+		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+	    <!-- jQuery -->
+	    <script src="../../js/jquery-1.11.3.min.js"></script>
 	    <!-- Bootstrap Core JavaScript -->
 	    <script src="../../js/bootstrap.min.js"></script>
 		<!-- IE10 viewport bug workaround -->
 		<script src="../../js/ie10-viewport-bug-workaround.js"></script>
 		<script>
-		$(function(){
-		$("#header").load("../head.html"); 
-		});
+			window.addEventListener('load', onVrViewLoad);
+
+			function onVrViewLoad() {
+			  // Selector '#vrview' finds element with id 'vrview'.
+			  var vrView = new VRView.Player('#vrview', {
+			    image: 'https://i.imgur.com/Ha3Yexw.jpg',
+				width: '100%',
+				height: '500px'
+			  });
+			}
+			
+			$(function(){
+			  $("#header").load("../head.html"); 
+			});
 		</script>
+
 </head>
 
 <body>
@@ -55,73 +68,23 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 class="text-center">Test our Virtual Reality Demos!</h1>
+                <h1 class="text-center">Demo 5</h1>
             </div>
         </div>
     </div>
 	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<!--Demo1-->
-				<a target="_blank" href="../1/index.html">
-  					<img src="https://i.imgur.com/PS08UIw.jpg?1" alt="Demo 1">
-				</a>
-				<br>
-				<a target="_blank" href="../1/index.html">Demo 1</a>
-				<br><br>
-				<!--Demo2-->
-				<a target="_blank" href="../2/index.html">
-  					<img src="https://i.imgur.com/KD2BwHJ.jpg?1" alt="Demo 2">
-				</a>
-				<br>
-				<a target="_blank" href="../2/index.html">Demo 2</a>
-				<br><br>
-				<!--Demo3-->
-				<a target="_blank" href="../3/index.html">
-  					<img src="https://i.imgur.com/Ojx23v7.jpg?1" alt="Demo 3">
-				</a>
-				<br>
-				<a target="_blank" href="../3/index.html">Demo 3</a>
-				<br><br>
-				<!--Demo4-->
-				<a target="_blank" href="../4/index.html">
-					<img src="https://i.imgur.com/np6Yj5M.jpg?1" alt="Demo 4">
-			  	</a>
-			  	<br>
-			  	<a target="_blank" href="../4/index.html">Demo 4</a>
-			  	<br><br>
-			  	<!--Demo5-->
-				<a target="_blank" href="../5/index.html">
-					<img src="https://i.imgur.com/u4K2IDF.jpg?1" alt="Demo 5">
-			  	</a>
-			  	<br>
-			  	<a target="_blank" href="../5/index.html">Demo 5</a>
-			  	<br><br>
-			  	<!--Demo6-->
-				<a target="_blank" href="../6/index.html">
-  					<img src="https://i.imgur.com/gSgoAyB.jpg?1" alt="Demo 6">
-				</a>
-				<br>
-				<a target="_blank" href="../6/index.html">Demo 6</a>
-				<br><br>
-				<!--Demo7-->
-				<a target="_blank" href="../7/index.html">
-  					<img src="https://i.imgur.com/ID6rPir.jpg?1" alt="Demo 7">
-				</a>
-				<br>
-				<a target="_blank" href="../7/index.html">Demo 7</a>
-				<br><br>
-				<!--Demo8-->
-				<a target="_blank" href="../8/index.html">
-  					<img src="https://i.imgur.com/X1Ya2lr.jpg?1" alt="Demo 8">
-				</a>
-				<br>
-				<a target="_blank" href="../8/index.html">Demo 8</a>
-				<br><br>
-			</div>
+		<!-- VR -->
+		<div class="container">
+			<audio autoplay="autoplay" loop="loop" controls="controls">
+			<source src="../../music/Demo_8.mp3" type="audio/mpeg">
+			<source src="../../music/Demo_8.ogg" type="audio/ogg">
+			<source src="../../music/Demo_8.wav" type="audio/wav">
+			Your browser does not support audio.
+			</audio>
+			<div id ='vrview'></div>
 		</div>
-	</div>
+	
+
 	<!-- Footer -->
 	<footer>
 	
@@ -137,7 +100,7 @@
 						<a href="tel:+16176106603"><span class="glyphicon glyphicon-phone-alt"></span> +1(617) 610 6603</a>
 						<br>
 						<a href="mailto:23yango@weston.org">23yango@weston.org</a>
-						<br><br>					
+						<br><br>
 					</div>
 				</div>
 			</div>
@@ -148,7 +111,7 @@
 				<div class="row">
 					<div class="col-sm-4 footer-info-item">
 						<ul class="list-unstyled">
-							<li><a href="about_us.html">About Us</a></li>
+							<li><a href="../../about_us.html">About Us</a></li>
 						</ul>
 					</div>
 			</div><!-- /.container -->
@@ -158,20 +121,15 @@
         <div class="small-print">
         	<div class="container">
         		<p>Possibly Copyrighted &copy; Quaker Oates Robotics Team 2018 </p>
+        		<br>
+        		<p> played by one of our students, Natalie Zhang, at Weston Middle School.</p>
         	</div>
         </div>
         </div>
 	</footer>
 
 	
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
-	<!-- IE10 viewport bug workaround -->
-	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	
 </body>
 
