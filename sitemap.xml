@@ -37,7 +37,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://quaker-oates.s3-website-us-east-1.amazonaws.com/demo/1/index.html</loc>
+    <loc>http://quaker-oates.s3-website-us-east-1.amazonaws.com/demo/9/index.html</loc>
     <lastmod>2018-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -49,13 +49,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://quaker-oates.s3-website-us-east-1.amazonaws.com/demo/8/index.html</loc>
+    <lastmod>2018-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://quaker-oates.s3-website-us-east-1.amazonaws.com/demo/4/index.html</loc>
     <lastmod>2018-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://quaker-oates.s3-website-us-east-1.amazonaws.com/demo/8/index.html</loc>
+    <loc>http://quaker-oates.s3-website-us-east-1.amazonaws.com/demo/1/index.html</loc>
     <lastmod>2018-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
